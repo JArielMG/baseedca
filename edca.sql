@@ -49,7 +49,7 @@ trigger_timing_ text;
 trigger_events_ text; 
 trigger_orientation_ text;
 trigger_action_ text;
-owner_ text := 'prueba_dashboard';
+owner_ text := 'tepjfdashboard';
 BEGIN
 	-- replace existing schema
 	EXECUTE 'DROP SCHEMA IF EXISTS ' || dest_schema || ' CASCADE';
@@ -18971,7 +18971,7 @@ ALTER TABLE ONLY public.user_contractingprocess
 -- Name: SCHEMA public; Type: ACL; Schema: -; Owner: -
 --
 
-GRANT ALL ON SCHEMA public TO prueba_captura;
+GRANT ALL ON SCHEMA public TO tepjfcaptura;
 
 
 --
