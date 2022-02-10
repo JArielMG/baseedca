@@ -3,7 +3,7 @@ DECLARE
   r record;
   i int;
   v_schema text[] := '{public}';
-  v_new_owner varchar := 'usrDbCap';
+  v_new_owner varchar := 'prueba_captura';
 BEGIN
     FOR r IN 
         select 'ALTER TABLE "' || table_schema || '"."' || table_name || '" OWNER TO "' || v_new_owner || '";' as a from information_schema.tables where table_schema = ANY (v_schema)
